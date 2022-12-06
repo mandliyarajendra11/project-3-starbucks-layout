@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>starbucks</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+<div class="circle"></div>
+    <header>
+      <img src="/images/logo.png" />
+      <nav>
+        <a href="#">home</a>
+        <a href="#">menu</a>
+        <a href="#">what's new</a>
+        <a href="#">contact</a>
+      </nav>
+    </header>
+    
+    <section>
+        <div class="text">
+      <h1>it's not just coffee<br/>it's <span>starbucks</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+        delectus, accusamus tempore modi praesentium, tenetur, velit ipsam
+        minima voluptatem laboriosam alias cupiditate. Consectetur.
+      </p>
+      <button class="btn">learn more</button>
+    </div>
+
+    <div class="imgbox">
+        <img src="/images/img1.png" class="starbucks">
+    </div>
+
+    <ul class="www">
+        <li><img src="/images/thumb1.png" onclick="imgSlider('/images/img1.png'); changeColor('#017143')"></li>
+        <li><img src="/images/thumb2.png"onclick="imgSlider('/images/img2.png'); changeColor('#eb7495')"></li>
+        <li><img src="/images/thumb3.png" onclick="imgSlider('/images/img3.png'); changeColor('#d752b1')"></li>
+    </ul>
+<ul class="sci">
+    <li><a href="#"><img src="/images/instagram.png"></a></li>
+    <li><a href="#"><img src="/images/twitter.png"></a></li>
+    <li><a href="#"><img src="/images/facebook.png"></a></li>
+</ul>
+</section>
+<script>
+    function imgSlider(anything){
+        document.querySelector('.starbucks').src =anything
+    }
+    function changeColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+    }
+</script>
+  </body>
+</html>
